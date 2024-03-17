@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container"> <!-- Bootstrap for a nice box-->
+    <br>
+    <div class="card border border-5 border-success">    <!-- we like the green of success here :)-->
+        <div class="card-body">  
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">   <!--keeps everything nicely centered-->
+                        <label for="new-game">Game Name</label>
+                        <input type="text" class="form-control border-success" id="new-game" placeholder="Game">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control border-success" id="new-start-date">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add-game" class="btn btn-success form-control">Add Game To List</button>
+            </div>      
+        </div>
+    </div>
+    <table id="games-list" class="table table-success table-striped table-bordered border-success table-hover">
+        <tr>
+            <th><center>Game</center></th>
+            <th><center>Started On</center></th>
+            <th><center>Finished?</center></th>
+            <th><center>Remove</center></th>
+        </tr>
+    </table>
+
+    <div>
+        <button id="delete-button" class="btn btn-danger form-control">Delete Button</button>
+    </div> 
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
